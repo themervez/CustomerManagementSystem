@@ -17,6 +17,5 @@ namespace CustomerManagementSystem.Core.Repositories
         Task<IEnumerable<T>> GetAllAsync();
 
         IQueryable<T> Where(Expression<Func<T, bool>> predicate);//linQ
-
     }
 }

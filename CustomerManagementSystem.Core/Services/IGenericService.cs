@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CustomerManagementSystem.Core.Services
 {
-    public interface IServiceGeneric<T, TDto> where T : class where TDto : class
+    public interface IGenericService<T, TDto> where T : class where TDto : class
     {
         Task<Response<TDto>> AddAsync(TDto entity);
         Task<Response<NoDataDto>> Update(TDto entity, int id);
